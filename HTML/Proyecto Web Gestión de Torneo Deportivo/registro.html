@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        table, th, td {
+        border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Torneo de Baloncesto</h1>
+    <table>
+        <tr>
+            <td><a href="index.html">Inicio</a></td>
+            <td><a href="equipos.html">Equipos</a></td>
+            <td><a href="clasificacion.html">Clasificación</a></td>
+            <td><a href="partidos.html">Partidos</a></td>
+            <td><a href="registro.html">Registro</a></td>
+            <td><a href="contacto.html">Contacto</a></td>
+        </tr>
+    </table>
+    <br>
+    <form action="registro.html" method="get">
+        <label for="usuario">Nombre de usuario</label><br>
+        <input type="text" id="usuario" name="user" value="Metroman"  required/><br>
+        <br>
+        <label for="pass">Contraseña:</label><br>
+        <input type="password" id="pass" name="pass" required/><br>
+
+        <p>Categoría:</p>
+        <input type="radio" id="Aficionado" name="categoria" value="Aficionado" required>
+        <label for="Aficionado">Aficionado</label><br>
+        
+        <input type="radio" id="Jugador" name="categoria" value="Jugador" required>
+        <label for="Jugador">Jugador</label><br>
+
+        <input type="radio" id="Entrenador" name="categoria" value="Entrenador" required>
+        <label for="Entrenador">Entrenador</label><br>
+
+        <h3><b>(Solo Aficionados)</b></h3>
+        <p>Dias:</p>
+        <input type="checkbox" id="Aficionado" name="horario" value="Aficionado">
+        <label for="Aficionado">20</label><br>
+        
+        <input type="checkbox" id="Jugador" name="horario" value="Jugador">
+        <label for="Jugador">21</label><br>
+
+        <input type="checkbox" id="Entrenador" name="horario" value="Entrenador">
+        <label for="Entrenador">22</label><br>
+
+        <input type="checkbox" id="Entrenador" name="horario" value="Entrenador">
+        <label for="Entrenador">23</label><br>
+        <br>
+
+        <p>Tipo de entrada</p>
+        <select name="Idioma" id="Idioma">
+            <option value="normal">Normal</option>
+            <option value="vip">Vip</option>
+            <option value="preferencial">Grada preferencial</option>
+            <option value="familiar">Familiar</option>
+        </select><br>
+
+        <p><b>Para grada preferencial</b></p>
+        <label for="comentarios">Escribe tus comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+        <br><br>
+        <input type="checkbox" id="terminos" name="terminos" value="accept">
+        <label for="terminos">Hacepto las normas del torneo</label><br>
+        <br>
+        <input type="submit" value="Enviar registro" required/>
+
+    </form>
+    
+</body>
+</html>

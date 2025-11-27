@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones</title>
+    <script>
+        function habilitarRespuesta() {
+            var chkResp = document.getElementById("respuesta");
+            var selComent = document.getElementById("numero");
+            selComent.disabled = !chkResp.checked;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Opiniones</h1>
+
+    <ol>
+        <li>Aupa Txantrea, la mejor! <b>(Aitor)</b></li>
+        <ul>
+            <li>No tinenes ni idea <b>(Alba)</b></li>
+            <li>Ya lo veremos <b>(Aitor)</b></li>
+        </ul>
+        <li>Falta Beste Iruña <b>(Mikel)</b></li>
+        <li>Ardoi es mejor <b>(Spyros)</b></li>
+    </ol>
+
+    <form action="get">
+        <input type="checkbox" id="respuesta" onclick="habilitarRespuesta()">
+        <label for="check">en respuesta a</label>
+        <select name="option" id="numero" disabled>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+        <br>
+        <textarea name="area" id="area"></textarea>
+        <br>
+        <input type="submit" value="Opinar">
+    </form>
+    <br>
+    <a href="votar.html">Volver</a>
+</body>
+
+</html>

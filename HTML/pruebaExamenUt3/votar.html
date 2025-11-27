@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votar</title>
+    <style>
+        table, th, td {
+        border:1px solid black;
+        width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mejor equipo</h1>
+    <table>
+        <tr>
+            <td>10</td>
+            <td rowspan="2"></td>
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+        </tr>
+        <tr>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td rowspan="3">A <br> A <br> A <br></td>
+        </tr>
+        <tr>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>B</td>
+            <td>A</td>
+        </tr>
+    </table>
+    <h2>No has votado todavia, elige</h2>
+    <form action="opiniones.html">
+        <input type="radio" id="vota" value="A-Txantrea(31)" name="votar">
+        <label for="vota">A-Txantrea(31)</label>
+        <input type="radio" id="vota" value="B-Donibane(10)" name="votar">
+        <label for="vota">B-Donibane(10)</label>
+        <input type="radio" id="vota" value="C-Txantrea(31)" name="votar">
+        <label for="vota">C-Txantrea(31)</label>
+        <br><br>
+        <input type="submit" value="Votar">
+    </form>
+    <a href="opiniones.html">Opinar</a>
+    <br>
+    <a href="index.html">Salir</a>
+</body>
+</html>

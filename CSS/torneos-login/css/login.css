@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    cursor: default;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: black;
+    background-image: url('/imgs/bgs/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin-top: 50%;
+}
+
+div.login-container{
+    background-color: white;
+    border-radius: 15px;
+    width: 100%; /* Ocupa el 90% del ancho en móviles */
+    max-width: 400px;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5;
+    
+}
+.login-container h1, .login-container input {
+    width: 100%;
+    margin-top: 10px;
+}
+input {
+    font-size: 15px;
+    text-align: center;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+
+h1{
+    color: orange;
+    margin: 0;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+}
+
+input[type=submit]{
+    border: 2px solid black;
+    border-top: rgb(141, 136, 136);
+    border-left: rgb(141, 136, 136);
+    background-color: orange;
+    width: 100%;
+}
+

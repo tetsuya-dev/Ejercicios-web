@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        table, th, td {
+        border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Torneo de Baloncesto</h1>
+    <table>
+        <tr>
+            <td><a href="index.html">Inicio</a></td>
+            <td><a href="equipos.html">Equipos</a></td>
+            <td><a href="clasificacion.html">Clasificación</a></td>
+            <td><a href="partidos.html">Partidos</a></td>
+            <td><a href="registro.html">Registro</a></td>
+            <td><a href="contacto.html">Contacto</a></td>
+        </tr>
+    </table>
+    <br>
+    <p>Organizador: <b>FIBA</b></p>
+    <p>Telefono: +34 600 000 000</p>
+    <a href="fiba@#gmail.com">fiba@gmail.com</a>
+    <br><br>
+
+    <h2>Formulario de contacto</h2>
+    <form action="get">
+        <label for="usuario">Nombre</label><br>
+        <input type="text" id="usuario" name="user" value="Metroman"/><br>
+        <br>
+        <label for="pass">Correo electronico:</label><br>
+        <input type="email" id="pass" name="pass"/><br>
+
+        <p>Asunto:</p>
+        <select name="consulta" id="consulta">
+            <option value="normal">Consulta general</option>
+            <option value="vip">Consulta de precios</option>
+            <option value="preferencial">Consulta de inscripcion</option>
+        </select>
+
+        <br><br>
+
+        <label for="comentarios">Mensaje:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar mensaje"/>
+
+    </form>
+    
+</body>
+</html>

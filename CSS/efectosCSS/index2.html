@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        .cuerpo {
+            width: 50%;
+            margin: auto;
+            height: 100%;
+            background-color: aqua;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            background-color: beige;
+            width: 50%;
+        }
+
+        .cajita {
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            text-align: center;
+        }
+        .cajita:hover+.submenu, .submenu:hover{
+            /* opacity: 1; */
+            display: inline;
+        }
+        .submenu{
+            background-color: red;
+            width: 100px;
+            position: absolute;
+            top: 0;
+            left: 100px;
+            /*opacity: 0.25;*/
+            display: none;
+        }
+        .contenido{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cuerpo">
+        <div class="menu">
+            <div class="cajita">
+                <span>Menu</span>
+            </div>
+            <div class="submenu">
+                <ul>
+                    <li>enlace1</li>
+                    <li>enlace2</li>
+                    <li>enlace3</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="textos">
+                <p>1.lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+                <p>lorem ipsum dot</p>
+            </div>
+            <div class="zona-boton">
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

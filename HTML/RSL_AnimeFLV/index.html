@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AnimeFLV - Índice de Series</title>
+    <style>
+        img {
+            transition: transform 0.3s; 
+        }
+
+        img:hover {
+            transform: scale(1.05); 
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; background-color: #001f3f; color: white;">
+
+    <!-- Cabecera con el logo y el enlace a Calendario de animes -->
+    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+        <!-- Logo -->
+        <a href="index.html" style="text-decoration: none; display: inline-block;">
+            <img src="https://i.imgur.com/I4aX1brg.jpg" alt="Logo de AnimeFLV" style="width: 150px; height: auto; border: 2px solid #001f3f; padding: 10px;">
+        </a>
+
+        <!-- Enlace al Calendario de animes -->
+        <a href="tabla.html" style="color: #4fc3f7; font-weight: bold; text-decoration: none;">Calendario de animes</a>
+    </div>
+
+    <!-- Contenido principal de las series -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; width: 80%;">
+        
+        <div style="border: 2px solid black; padding: 10px; text-align: center; width: 30%; background-color: white; color: black;">
+            <a href="serie1.html" style="text-decoration: none; color: black;">
+                <img src="https://www.justwatch.com/images/poster/261483319/s718/boku-no-hero-academia.jpg" alt="Boku no Hero" style="width: 100%; height: auto; display: block; margin-bottom: 10px;">
+                Boku no Hero
+            </a>
+        </div>
+        
+        <div style="border: 2px solid black; padding: 10px; text-align: center; width: 30%; background-color: white; color: black;">
+            <a href="serie2.html" style="text-decoration: none; color: black;">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/f/f6/JJK_New_Key_Visual.jpg/revision/latest/scale-to-width-down/1200?cb=20200914020414&path-prefix=es" alt="Jujutsu Kaisen" style="width: 100%; height: auto; display: block; margin-bottom: 10px;">
+                Jujutsu Kaisen
+            </a>
+        </div>
+        
+        <div style="border: 2px solid black; padding: 10px; text-align: center; width: 30%; background-color: white; color: black;">
+            <a href="serie3.html" style="text-decoration: none; color: black;">
+                <img src="https://static.wikia.nocookie.net/doblaje/images/0/0f/Dan_Da_Dan_-_Poster.jpg/revision/latest?cb=20241004200001&path-prefix=es" alt="DanDaDan" style="width: 100%; height: auto; display: block; margin-bottom: 10px;">
+                DanDaDan
+            </a>
+        </div>
+        
+        <div style="border: 2px solid black; padding: 10px; text-align: center; width: 30%; background-color: white; color: black;">
+            <a href="serie4.html" style="text-decoration: none; color: black;">
+                <img src="https://yt3.ggpht.com/TlAZdsoH2JxcuCJz0hpXHOlWFD0WlI6xpkGoqjFFsmP28E5EUaqe3OQCSDvp_vVpHP5o9zonZHmjkRo=s1600-nd-v1" alt="Dragon Ball Daima" style="width: 100%; height: auto; display: block; margin-bottom: 10px;">
+                Dragon Ball Daima
+            </a>
+        </div>
+        
+        <div style="border: 2px solid black; padding: 10px; text-align: center; width: 30%; background-color: white; color: black;">
+            <a href="serie5.html" style="text-decoration: none; color: black;">
+                <img src="https://static.wikia.nocookie.net/doblaje/images/a/aa/JoJo%27s_Bizarre_Adventure_Stardust_Crusaders.png/revision/latest?cb=20200926180720&path-prefix=es" alt="Jojo's Bizarre Adventure" style="width: 100%; height: auto; display: block; margin-bottom: 10px;">
+                Jojo's Bizarre Adventure
+            </a>
+        </div>
+        
+        <div style="border: 2px solid black; padding: 10px; text-align: center; width: 30%; background-color: white; color: black;">
+            <a href="serie6.html" style="text-decoration: none; color: black;">
+                <img src="https://shingeki.tv/final/img/home/visual_02.jpg" alt="Shingeki no Kyojin" style="width: 100%; height: auto; display: block; margin-bottom: 10px;">
+                Shingeki no Kyojin
+            </a>
+        </div>
+    </div>
+
+    <div style="width: 80%; margin-top: 20px; padding: 20px; background-color: white; color: black; border: 2px solid black;">
+        <h2 style="text-align: center;">Sugerencia de Nuevas Series</h2>
+        <form>
+            <label for="nombreSerie">Nombre de la Serie:</label>
+            <input type="text" id="nombreSerie" name="nombreSerie" required style="width: 100%; margin-bottom: 10px;"><br>
+
+            <label for="numeroCapitulos">Número de Capítulos:</label>
+            <input type="number" id="numeroCapitulos" name="numeroCapitulos" required style="width: 100%; margin-bottom: 10px;"><br>
+
+            <label for="fechaPublicacion">Fecha de Publicación:</label>
+            <input type="date" id="fechaPublicacion" name="fechaPublicacion" required style="width: 100%; margin-bottom: 10px;"><br>
+
+            <input type="submit" value="Enviar Sugerencia" style="width: 100%; background-color: #001f3f; color: white; padding: 10px; border: none; cursor: pointer;">
+        </form>
+
+        <p style="text-align: center; margin-top: 10px; background-color: #d3d3d3; padding: 10px;">
+            Al enviar esta sugerencia, aceptas nuestros <a href="condiciones.html" style="color: #001f3f; text-decoration: underline;">Términos y Condiciones</a>.
+        </p>
+    </div>
+    
+</body>
+</html>
