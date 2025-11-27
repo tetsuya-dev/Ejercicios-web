@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -16,87 +17,116 @@ body {
     background-image: url("../icons/project_papper.png");
     color: #222;
     font-family: Arial, Helvetica, sans-serif;
-    padding: .5em;
+    padding: 0.5em;
 }
 
 /*--------------------------------------------------*/
 /********************** header **********************/
 /*--------------------------------------------------*/
-header{
+header {
     text-align: center;
+    margin: 10px;
 }
-header a{
+header a {
+    display: inline-block;
     background-color: black;
     color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
 }
-header input{
+
+header input {
     width: 100%;
+    margin-top: 10px;
 }
-h1{
+h1 {
     text-align: center;
 }
-h2{
+h2 {
     text-align: center;
 }
-h2 a{
+h2 a {
     color: black;
 }
-h2 img{
+h2 img {
     width: 2vh;
 }
 
-
-
 /*----------------- Game-icons.net -----------------*/
-#content ul{
+#content ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
-ul img{
+ul img {
     width: 10vh;
 }
-ul span{
+ul span {
     display: none;
 }
-p a{
+ul li {
+    margin: 5px;
+    text-align: center;
+}
+p a {
     color: black;
 }
 
-
-
 /*--------------------- search --------------------*/
-
-
-
-
 
 /*--------------------------------------------------*/
 /********************** content *********************/
 /*--------------------------------------------------*/
-
-
+#content h1 {
+    font-weight: normal;
+}
+#content h2 {
+    font-weight: normal;
+}
 
 
 /*---------------------- h1,h2 ---------------------*/
 
-
-
-
 /*---------------------- main ----------------------*/
-main.content img{
+main.content img {
     width: 10px;
 }
 
-
-
 /*---------------------- aside ---------------------*/
-div.ArchiveDownloads{
+div.ArchiveDownloads {
     background-color: black;
 }
 
+div.ArchiveDownload button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px;
+}
 
+aside ul a{
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border: 10px;
+    border-radius: 5px;
+}
 /*--------------------------------------------------*/
 /********************** footer **********************/
 /*--------------------------------------------------*/
 
+nav ul {
+    list-style-type: none;
+    
+}
+nav ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+nav ul li a {
+    color: black;
+}
